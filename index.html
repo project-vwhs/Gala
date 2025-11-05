@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valley-Wide Health Systems' 50th Anniversary Gala</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Simple checkmark icon for lists */
+        .perk-item::before {
+            content: '✓';
+            color: #0d9488; /* teal-600 */
+            font-weight: bold;
+            display: inline-block;
+            width: 1.25em;
+            margin-left: -1.25em;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div>
+                <a href="#" title="Valley-Wide Health Systems">
+                    <img src="https://valley-widehealth.org/wp-content/uploads/2020/10/VWHS_5inchWIDE_SolidBlue_TransparentBG.png" 
+                         alt="Valley-Wide Health Systems Logo" 
+                         class="h-10 md:h-12"
+                         onerror="this.src='https://placehold.co/200x50/061f52/FFFFFF?text=Valley-Wide+Health+Systems'; this.classList.remove('h-10', 'md:h-12'); this.classList.add('h-12');">
+                </a>
+            </div>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#about" class="text-gray-600 hover:text-blue-900 font-medium">About the Event</a>
+                <a href="#tickets" class="text-gray-600 hover:text-blue-900 font-medium">Tickets</a>
+                <a href="#sponsors" class="text-gray-600 hover:text-blue-900 font-medium">Sponsor</a>
+                <a href="#contact" class="bg-teal-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-teal-700 transition-colors">Get Tickets</a>
+            </div>
+            <!-- Mobile Menu Button (simple) -->
+            <div class="md:hidden">
+                <button class="text-gray-600" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 space-y-2">
+            <a href="#about" class="block text-gray-600 hover:text-blue-900 font-medium">About the Event</a>
+            <a href="#tickets" class="block text-gray-600 hover:text-blue-900 font-medium">Tickets</a>
+            <a href="#sponsors" class="block text-gray-600 hover:text-blue-900 font-medium">Sponsor</a>
+            <a href="#contact" class="block bg-teal-600 text-white text-center font-bold py-2 px-4 rounded-lg hover:bg-teal-700 transition-colors">Get Tickets</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative text-white overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="https://placehold.co/1800x800/061f52/eab308?text=Celebrating+50+Years" 
+                 alt="Elegant gala event background" 
+                 class="w-full h-full object-cover"
+                 onerror="this.src='https://placehold.co/1800x800/061f52/FFFFFF?text=50th+Anniversary+Gala'">
+            <div class="absolute inset-0 bg-blue-900 opacity-80"></div>
+        </div>
+        
+        <div class="relative container mx-auto px-6 py-24 md:py-32 lg:py-48 text-center">
+            <h1 class="text-4xl md:text-6xl font-black tracking-tight drop-shadow-md">50th Anniversary Fundraising Gala</h1>
+            <p class="mt-4 text-xl md:text-3xl font-light text-teal-200">Celebrating 50 Years of Community Care</p>
+            
+            <div class="mt-12 bg-white/10 backdrop-blur-sm p-6 rounded-lg inline-block shadow-xl">
+                <div class="flex flex-col md:flex-row md:space-x-8 text-lg md:text-xl">
+                    <div class="flex items-center justify-center space-x-2">
+                        <svg class="w-6 h-6 text-teal-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
+                        <span class="font-semibold">Friday, March 13, 2026</span>
+                    </div>
+                    <div class="flex items-center justify-center space-x-2 mt-4 md:mt-0">
+                        <svg class="w-6 h-6 text-teal-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg>
+                        <span class="font-semibold">The Alamosa Event Center</span>
+                    </div>
+                    <div class="flex items-center justify-center space-x-2 mt-4 md:mt-0">
+                        <svg class="w-6 h-6 text-teal-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path></svg>
+                        <span class="font-semibold">6:00 PM</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12">
+                <a href="#tickets" class="bg-teal-600 text-white font-bold py-4 px-10 text-lg rounded-lg hover:bg-teal-700 transition-colors shadow-lg">Get Tickets Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 md:py-32 bg-white">
+        <div class="container mx-auto px-6 max-w-4xl text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-blue-900">A Legacy of Care. A Foundation for the Future.</h2>
+            <p class="mt-6 text-lg text-gray-700 leading-relaxed">
+                For 50 years, Valley-Wide Health Systems has been steadfast in its mission to provide high-quality, accessible, and affordable healthcare to our communities across the San Luis Valley and Southern Colorado. We have grown from a small clinic into a comprehensive healthcare home for thousands, and this achievement was only possible through the enduring support of partners like you.
+            </p>
+            <p class="mt-6 text-lg text-gray-700 leading-relaxed">
+                This gala is more than just a celebration; it is a critical fundraiser to ensure our legacy of care continues for the next 50 years. The funds raised will support the establishment of the
+                <strong class="font-bold text-blue-900">Valley-Wide Foundation</strong>,
+                which will catalyze future development across our medical, behavioral, dental, and physical therapy service lines.
+            </p>
+            <div class="mt-10 pt-8 border-t border-gray-200">
+                <p class="text-xl font-medium text-gray-800 italic">
+                    "It is with immense pride and gratitude that I invite you to join us in celebrating this incredible milestone. We look forward to celebrating with you."
+                </p>
+                <p class="mt-4 font-semibold text-gray-900">Jania Arnoldi</p>
+                <p class="text-gray-600">President/CEO, Valley-Wide Health Systems</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tickets Section -->
+    <section id="tickets" class="py-20 md:py-32 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-blue-900 text-center">Purchase Your Tickets</h2>
+            <p class="text-lg text-gray-700 text-center mt-4 max-w-2xl mx-auto">
+                Support the new Valley-Wide Foundation by purchasing tickets or hosting a table.
+            </p>
+
+            <!-- Early Bird Banner -->
+            <div class="mt-10 max-w-3xl mx-auto bg-teal-50 border-l-4 border-teal-500 text-teal-900 p-6 rounded-lg shadow">
+                <h3 class="font-bold text-xl">Early Bird Discount!</h3>
+                <p class="mt-2 text-lg">Purchase your tickets by <strong class="font-semibold">[Date]</strong> to receive a 15% discount. Don't miss this opportunity to save while supporting a great cause!</p>
+            </div>
+
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- General Admission Ticket -->
+                <div class="bg-white rounded-lg shadow-xl border border-gray-200 flex flex-col">
+                    <div class="p-8 flex-grow">
+                        <h3 class="text-2xl font-bold text-blue-900">General Admission</h3>
+                        <p class="mt-4 text-4xl font-extrabold text-gray-900">$100</p>
+                        <p class="mt-4 text-gray-600">Per person</p>
+                        <p class="mt-6 text-gray-700">Provides an accessible entry point for community members and supporters to join the celebration.</p>
+                    </div>
+                    <div class="p-6 bg-gray-50 rounded-b-lg">
+                        <a href="#contact" class="block w-full text-center bg-blue-800 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors">Buy Now</a>
+                    </div>
+                </div>
+
+                <!-- Patron Ticket -->
+                <div class="bg-white rounded-lg shadow-xl border-2 border-teal-500 flex flex-col relative">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-teal-600 text-white font-bold px-4 py-1 rounded-full text-sm shadow-lg">Most Popular</div>
+                    <div class="p-8 flex-grow">
+                        <h3 class="text-2xl font-bold text-blue-900">Patron Ticket</h3>
+                        <p class="mt-4 text-4xl font-extrabold text-gray-900">$200</p>
+                        <p class="mt-4 text-gray-600">Per person</p>
+                        <p class="mt-6 text-gray-700">Includes the fair market value of the event plus a <strong class="font-semibold">$100 tax-deductible donation</strong> to the Valley-Wide Foundation.</p>
+                    </div>
+                    <div class="p-6 bg-gray-50 rounded-b-lg">
+                        <a href="#contact" class="block w-full text-center bg-teal-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-teal-700 transition-colors">Buy Patron Ticket</a>
+                    </div>
+                </div>
+
+                <!-- Table Host -->
+                <div class="bg-white rounded-lg shadow-xl border border-gray-200 flex flex-col">
+                    <div class="p-8 flex-grow">
+                        <h3 class="text-2xl font-bold text-blue-900">Table Host</h3>
+                        <p class="mt-4 text-4xl font-extrabold text-gray-900">$1,000</p>
+                        <p class="mt-4 text-gray-600">Reserved table for 8</p>
+                        <p class="mt-6 text-gray-700">A perfect way for your business or group to bring your team and guarantee seating together. Includes a "Table Host" listing in the program.</p>
+                    </div>
+                    <div class="p-6 bg-gray-50 rounded-b-lg">
+                        <a href="#contact" class="block w-full text-center bg-blue-800 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors">Host a Table</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsorship Section -->
+    <section id="sponsors" class="py-20 md:py-32 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-blue-900 text-center">Become a Sponsor</h2>
+            <p class="text-lg text-gray-700 text-center mt-4 max-w-2xl mx-auto">
+                Partner with us to make a profound impact on the health of our community for the next 50 years.
+            </p>
+
+            <div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Legacy Sponsor -->
+                <div class="bg-white rounded-lg shadow-2xl border-2 border-teal-500 flex flex-col">
+                    <div class="p-8 flex-grow">
+                        <h3 class="text-xl font-bold text-teal-700 tracking-wider uppercase">The "Legacy" Presenting Sponsor</h3>
+                        <p class="mt-2 text-4xl font-extrabold text-gray-900">$5,000</p>
+                        <p class="mt-1 text-sm font-semibold text-gray-600">(Limit 1-2)</p>
+                        <ul class="mt-8 space-y-3 text-gray-700">
+                            <li class="flex"><span class="perk-item">Event presented in your name</span></li>
+                            <li class="flex"><span class="perk-item">2-minute speaking opportunity</span></li>
+                            <li class="flex"><span class="perk-item">One premium table (8 tickets)</span></li>
+                            <li class="flex"><span class="perk-item">Top-tier logo on all event materials</span></li>
+                            <li class="flex"><span class="perk-item">Full-page, premium-placement ad</span></li>
+                            <li class="flex"><span class="perk-item">Dedicated "Thank You" social media post</span></li>
+                        </ul>
+                    </div>
+                    <div class="p-6 bg-gray-50 rounded-b-lg">
+                        <a href="#contact" class="block w-full text-center bg-teal-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-teal-700 transition-colors">Become the Legacy Sponsor</a>
+                    </div>
+                </div>
+
+                <!-- Heritage Sponsor -->
+                <div class="bg-white rounded-lg shadow-xl border border-gray-200 flex flex-col">
+                    <div class="p-8 flex-grow">
+                        <h3 class="text-xl font-bold text-blue-900 tracking-wider uppercase">The "Heritage" Sponsor</h3>
+                        <p class="mt-2 text-4xl font-extrabold text-gray-900">$3,000</p>
+                        <ul class="mt-8 space-y-3 text-gray-700">
+                            <li class="flex"><span class="perk-item">Verbal "Thank You" from podium</span></li>
+                            <li class="flex"><span class="perk-item">One premium table (8 tickets)</span></li>
+                            <li class="flex"><span class="perk-item">Prominent logo on event materials</span></li>
+                            <li class="flex"><span class="perk-item">Full-page ad in program</span></li>
+                            <li class="flex"><span class="perk-item">Group "Thank You" social media post</span></li>
+                        </ul>
+                    </div>
+                    <div class="p-6 bg-gray-50 rounded-b-lg">
+                        <a href="#contact" class="block w-full text-center bg-blue-800 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors">Become a Heritage Sponsor</a>
+                    </div>
+                </div>
+
+                <!-- Community Keystone Sponsor -->
+                <div class="bg-white rounded-lg shadow-xl border border-gray-200 flex flex-col">
+                    <div class="p-8 flex-grow">
+                        <h3 class="text-xl font-bold text-blue-900 tracking-wider uppercase">The "Community Keystone" Sponsor</h3>
+                        <p class="mt-2 text-4xl font-extrabold text-gray-900">$1,500</p>
+                        <ul class="mt-8 space-y-3 text-gray-700">
+                            <li class="flex"><span class="perk-item">Four gala tickets (half-table)</span></li>
+                            <li class="flex"><span class="perk-item">Logo on event website & sponsor screen</span></li>
+                            <li class="flex"><span class="perk-item">Half-page ad in program</span></li>
+                            <li class="flex"><span class="perk-item">Logo in group "Thank You" post</span></li>
+                        </ul>
+                    </div>
+                    <div class="p-6 bg-gray-50 rounded-b-lg">
+                        <a href="#contact" class="block w-full text-center bg-blue-800 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors">Become a Keystone Sponsor</a>
+                    </div>
+                </div>
+
+                <!-- Valley Partner Sponsor -->
+                <div class="bg-white rounded-lg shadow-lg border border-gray-200 flex flex-col">
+                    <div class="p-8 flex-grow">
+                        <h3 class="text-xl font-bold text-blue-900 tracking-wider uppercase">The "Valley Partner" Sponsor</h3>
+                        <p class="mt-2 text-4xl font-extrabold text-gray-900">$1,000</p>
+                        <ul class="mt-8 space-y-3 text-gray-700">
+                            <li class="flex"><span class="perk-item">Two gala tickets</span></li>
+                            <li class="flex"><span class="perk-item">Logo listed on event website</span></li>
+                            <li class="flex"><span class="perk-item">Logo listed in program</span></li>
+                            <li class="flex"><span class="perk-item">Name in group "Thank You" post</span></li>
+                        </ul>
+                    </div>
+                    <div class="p-6 bg-gray-50 rounded-b-lg">
+                        <a href="#contact" class="block w-full text-center bg-blue-800 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors">Become a Valley Partner</a>
+                    </div>
+                </div>
+
+                <!-- Friend of Valley-Wide -->
+                <div class="bg-white rounded-lg shadow-lg border border-gray-200 flex flex-col">
+                    <div class="p-8 flex-grow">
+                        <h3 class="text-xl font-bold text-blue-900 tracking-wider uppercase">"Friend of Valley-Wide" Sponsor</h3>
+                        <p class="mt-2 text-4xl font-extrabold text-gray-900">$500</p>
+                        <ul class="mt-8 space-y-3 text-gray-700">
+                            <li class="flex"><span class="perk-item">One gala ticket</span></li>
+                            <li class="flex"><span class="perk-item">Name listed on event website</span></li>
+                            <li class="flex"><span class="perk-item">Name listed in program</span></li>
+                            <li class="flex"><span class="perk-item">A pure donation to show support!</span></li>
+                        </ul>
+                    </div>
+                    <div class="p-6 bg-gray-50 rounded-b-lg">
+                        <a href="#contact" class="block w-full text-center bg-blue-800 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors">Become a Friend</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA Section -->
+    <section id="contact" class="py-20 md:py-32 bg-blue-900 text-white">
+        <div class="container mx-auto px-6 max-w-3xl text-center">
+            <h2 class="text-3xl md:text-4xl font-bold">Ready to Celebrate With Us?</h2>
+            <p class="mt-6 text-lg text-blue-100 leading-relaxed">
+                To confirm your sponsorship, purchase a table, or for any other inquiries, please reach out to our team. We would be honored to partner with you.
+            </p>
+            <div class="mt-10 p-8 bg-white/10 backdrop-blur-sm rounded-lg shadow-lg inline-block">
+                <p class="text-xl font-bold text-white">Krista Martinez, Marketing Director</p>
+                <p class="mt-4 text-lg">
+                    <a href="mailto:[email protected]" class="font-semibold text-teal-300 hover:text-teal-200">[email protected]</a>
+                </p>
+                <p class="mt-2 text-lg">
+                    <a href="tel:555-123-4567" class="font-semibold text-teal-300 hover:text-teal-200">(555) 123-4567</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-gray-800 text-gray-400">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Valley-Wide Health Systems. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple mobile menu toggle
+        document.querySelector('button[onclick="document.getElementById(\'mobile-menu\').classList.toggle(\'hidden\')"]').addEventListener('click', function() {
+            // This is just to demonstrate functionality, the onclick handles it.
+        });
+
+        // Close mobile menu on link click
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+    </script>
+
+</body>
+</html>
